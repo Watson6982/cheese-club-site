@@ -20,7 +20,7 @@ var njk = expressNunjucks(app, {
     throwOnUndefined: isDev 
 });
 // middleware
-app.use(express.static('public'))
+app.use(express.static('public'));
 app.use(helmet()); // security stuffs
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
